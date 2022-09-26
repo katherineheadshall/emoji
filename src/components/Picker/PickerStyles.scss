@@ -91,6 +91,11 @@
   justify-content: center;
 }
 
+.close-button-container .close-button-button {
+  position: relative;
+  top: -2px;
+}
+
 .relative { position: relative }
 
 .flex { display: flex }

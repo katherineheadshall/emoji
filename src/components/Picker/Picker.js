@@ -989,7 +989,7 @@ export default class Picker extends Component {
           }}
         >
           <span class={`skin-tone skin-tone-${this.state.skin} close-button-container`}>
-            <div>x</div>
+            <div class={`close-button-button`}>x</div>
           </span>
         </button>
       </div>
