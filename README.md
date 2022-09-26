@@ -6,6 +6,10 @@
   <br>Brought to you by the <a title="Team email, team chat, team tasks, one app" href="https://missiveapp.com">Missive</a> team
 </div>
 
+<br>
+
+> Edição base para desenvolvedores brasileiros, esta versão do emoji mart dispensa a necessidade do i18n 😲😎👍🅰️, i18n ptBr incluido nativamente.
+
 ## 📖 Table of Contents
 - [💾 Data](#-data)
 - [🏪 Picker](#-picker)
