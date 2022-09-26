@@ -1,4 +1,4 @@
-import i18n_en from '@emoji-mart/data/i18n/en.json'
+import i18n_ptBr from '../ptBr.json'
 import PickerProps from './components/Picker/PickerProps'
 import {
   FrequentlyUsed,
@@ -87,7 +87,7 @@ async function _init(props) {
   I18n =
     (typeof props.i18n === 'function' ? await props.i18n() : props.i18n) ||
     (locale == 'en'
-      ? i18n_en
+      ? i18n_ptBr
       : await fetchJSON(
           `https://cdn.jsdelivr.net/npm/@emoji-mart/data@latest/i18n/${locale}.json`,
         ))

@@ -1,0 +1,29 @@
+{
+  "search": "Procurar",
+  "search_no_results_1": "Ah não!",
+  "search_no_results_2": "Esse emoji não foi encontrado",
+  "pick": "Escolha um emoji...",
+  "add_custom": "Adicione um emoji customizado",
+  "categories": {
+    "activity": "Atividade",
+    "custom": "Customizado",
+    "flags": "Bandeiras",
+    "foods": "Comidas & Bebidas",
+    "frequent": "Usados recentemente",
+    "nature": "Animais & Natureza",
+    "objects": "Objetos",
+    "people": "Carinhas & Pessoas",
+    "places": "Viagens & Lugares",
+    "search": "Resultados encontrados",
+    "symbols": "Símbolos"
+  },
+  "skins": {
+    "choose": "Personalizar",
+    "1": "Selecionar",
+    "2": "Selecionar",
+    "3": "Selecionar",
+    "4": "Selecionar",
+    "5": "Selecionar",
+    "6": "Selecionar"
+  }
+}
