@@ -717,6 +717,9 @@ export default class Picker extends Component {
         {!emoji &&
           this.props.skinTonePosition == 'preview' &&
           this.renderSkinToneButton()}
+        {!emoji &&
+          this.props.skinTonePosition == 'preview' &&
+          this.renderCloseButton()}
       </div>
     )
   }
@@ -954,6 +957,40 @@ export default class Picker extends Component {
           }}
         >
           <span class={`skin-tone skin-tone-${this.state.skin}`}></span>
+        </button>
+      </div>
+    )
+  }
+
+  renderCloseButton() {
+    if (this.props.skinTonePosition == 'none') {
+      return null
+    }
+
+    return (
+      <div
+        class="flex flex-auto flex-center flex-middle"
+        style={{
+          position: 'relative',
+          width: this.props.emojiButtonSize,
+          height: this.props.emojiButtonSize,
+        }}
+      >
+        <button
+          type="button"
+          class="skin-tone-button flex flex-auto flex-center flex-middle"
+          aria-selected={this.state.showSkins ? '' : undefined}
+          aria-label={"Fechar"}
+          title={"Fechar"}
+          onClick={this.props.onClose}
+          style={{
+            width: this.props.emojiSize,
+            height: this.props.emojiSize,
+          }}
+        >
+          <span class={`skin-tone skin-tone-${this.state.skin}`}>
+            x
+          </span>
         </button>
       </div>
     )

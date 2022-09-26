@@ -99,6 +99,7 @@ export default {
   getSpritesheetURL: null,
   onAddCustomEmoji: null,
   onClickOutside: null,
+  onClose: null,
   onEmojiSelect: null,
 
   // Deprecated
