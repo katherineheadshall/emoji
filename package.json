@@ -1,0 +1,56 @@
+{
+  "name": "@katherineheadshall/emoji-mart",
+  "version": "1.0.0",
+  "description": "Katherine Headshall Emoji Mart Edition.",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/katherineheadshall/emoji",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/katherineheadshall/emoji"
+  },
+  "source": "src/index.js",
+  "main": "dist/main.js",
+  "module": "dist/module.js",
+  "global": "dist/browser.js",
+  "browserslist": "defaults",
+  "targets": {
+    "main": {
+      "includeNodeModules": true
+    },
+    "module": {
+      "includeNodeModules": true
+    },
+    "global": {
+      "source": "src/browser.js",
+      "includeNodeModules": true
+    }
+  },
+  "keywords": [
+    "emoji",
+    "emoticons",
+    "emoji-picker",
+    "web-component",
+    "twemoji"
+  ],
+  "scripts": {
+    "build": "parcel build --no-autoinstall",
+    "prepublishOnly": "yarn build"
+  },
+  "devDependencies": {
+    "@parcel/transformer-inline-string": "2.3.2",
+    "@parcel/transformer-sass": "2.3.2",
+    "autoprefixer": "10.4.4",
+    "parcel": "2.3.2",
+    "preact": "10.6.4"
+  },
+  "alias": {
+    "react": "preact/compat",
+    "react-dom/test-utils": "preact/test-utils",
+    "react-dom": "preact/compat",
+    "react/jsx-runtime": "preact/jsx-runtime"
+  },
+  "files": [
+    "/dist",
+    "LICENSE"
+  ]
+}
