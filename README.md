@@ -35,7 +35,7 @@ yarn add @emoji-mart/data
 
 ```js
 import data from '@emoji-mart/data'
-import { Picker } from 'emoji-mart'
+import { Picker } from '@katherineheadshall/emoji-mart'
 
 new Picker({ data })
 ```
@@ -45,7 +45,7 @@ new Picker({ data })
 - **Cons:** Network latency, doesn’t work offline (unless you configure a ServiceWorker)
 
 ```js
-import { Picker } from 'emoji-mart'
+import { Picker } from '@katherineheadshall/emoji-mart'
 new Picker({
   data: async () => {
     const response = await fetch(
@@ -62,23 +62,23 @@ In this example data is fetched from a content delivery network, but it could al
 ## 🏪 Picker
 ### React
 ```sh
-npm install --save emoji-mart @emoji-mart/data @emoji-mart/react
+yarn add @katherineheadshall/emoji-mart @emoji-mart/data
 ```
 
 ```js
 import data from '@emoji-mart/data'
-import Picker from '@emoji-mart/react'
+import { Picker } from '@katherineheadshall/emoji-mart'
 
-function App() {
-  return (
-    <Picker data={data} onEmojiSelect={console.log} />
-  )
+export const YourOwnPicker = (props, ref) => {
+  useEffect(() => {
+    new Picker({ ...props, data, ref });
+  });
 }
 ```
 
 ### Browser
 ```html
-<script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@katherineheadshall/emoji-mart@latest/dist/browser.js"></script>
 <script>
   const pickerOptions = { onEmojiSelect: console.log }
   const picker = new EmojiMart.Picker(pickerOptions)
