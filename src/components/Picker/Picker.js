@@ -988,8 +988,8 @@ export default class Picker extends Component {
             height: this.props.emojiSize,
           }}
         >
-          <span class={`skin-tone skin-tone-${this.state.skin}`}>
-            x
+          <span class={`skin-tone skin-tone-${this.state.skin} close-button-container`}>
+            <div>x</div>
           </span>
         </button>
       </div>
